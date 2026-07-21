@@ -1,0 +1,54 @@
+name: Feature proposal
+description: Propose a product or platform capability
+title: "[Feature] "
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product area
+      options:
+        - Platform
+        - Desktop
+        - API
+        - Portal
+        - PIE
+        - Shared contracts
+        - Documentation
+        - Design
+        - Labs
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the user, project, or engineering problem before proposing a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and examples
+      description: Include workflows, affected objects, screenshots, or project-control examples.
+  - type: textarea
+    id: architecture
+    attributes:
+      label: Contract, graph, AI, security, or migration considerations
+  - type: dropdown
+    id: wave
+    attributes:
+      label: Suggested program area
+      options:
+        - Wave 1 - Core Platform
+        - Wave 2 - Professional UX
+        - Wave 3 - Connected Project
+        - Wave 4 - AI Agent
+        - Wave 5 - Learning Layer
+        - Wave 6 - Production Hardening
+        - Future / Unscheduled
