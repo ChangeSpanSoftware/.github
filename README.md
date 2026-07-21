@@ -1,49 +1,5 @@
-ChangeSpan
+# ChangeSpanSoftware organization defaults
 
-Project Intelligence Platform
+This repository contains the organization profile, contribution standards, security policy, support guidance, issue forms, and pull request template used across ChangeSpanSoftware repositories.
 
-Desktop
-API
-Portal
-Project Intelligence Engine (PIE)
-Universal Object Graph
-
-Mission
-
-Build the world's most intelligent project controls platform.
-
-Products
-
-Desktop
-
-Portal
-
-API
-
-PIE
-
-Universal Object Graph
-
-Core Principles
-
-Evidence first
-
-Connected information
-
-Explainable AI
-
-Transparent decisions
-
-Human in control
-
-Roadmap
-
-Platform 2.0
-
-Wave 1
-
-Wave 2
-
-Wave 3
-
-Version 1.0
+The public organization profile is rendered from `profile/README.md`.
