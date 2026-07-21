@@ -1,1 +1,65 @@
-
+name: Bug report
+description: Report a reproducible ChangeSpan defect
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product area
+      options:
+        - Platform
+        - Desktop
+        - API
+        - Portal
+        - PIE
+        - Shared contracts
+        - Documentation
+        - Design
+        - Labs
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Platform version or commit
+      placeholder: 1.0.0-alpha.1 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Windows 11, Python 3.11, Node version, browser, etc.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal, ordered reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized logs, screenshots, or evidence
+      description: Remove secrets, customer data, and confidential project information.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I removed secrets and confidential project information.
+          required: true
+        - label: I searched for an existing issue describing this problem.
+          required: true
